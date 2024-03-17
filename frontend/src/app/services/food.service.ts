@@ -29,6 +29,10 @@ export class FoodService {
 
   }
 
+  getAllFoodBySearchTerm(searchTerm: string) {
+    return this.getAll().filter(food => food.name.toLowerCase().includes(searchTerm.toLowerCase()))
+  }
+
 }
 
 

@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { FoodService } from 'src/app/services/food.service';
 
 import { Food } from 'src/app/models/Food';
+import { ActivatedRoute } from '@angular/router';
 
 
 
@@ -29,9 +30,15 @@ export class HomeComponent {
 
   constructor(
 
-    private foodService: FoodService) {
+    private foodService: FoodService, activatedRoute: ActivatedRoute) {
+    activatedRoute.params.subscribe((params) => {
+      if (params.searchTerm)
+        this.foods = this.foodService.getAllFoodBySearchTerm(params.searchTerm)
+      else
+        this.foods = foodService.getAll();
+    })
 
-    this.foods = foodService.getAll();
+
 
   }
 
