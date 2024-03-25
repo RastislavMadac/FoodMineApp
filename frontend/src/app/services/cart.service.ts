@@ -48,11 +48,16 @@ export class CartService {
   }
 
   private setCartToLocalStorage(): void {
-    this.cart.totalPrice = this.cart.items.reduce((prevSum, currentItem) => prevSum + currentItem.price, 0)
+    this.cart.totalPrice = this.cart.items
+      .reduce((prevSum, currentItem) => prevSum + (currentItem.price * currentItem.quantity), 0);
+
+
+    // this.cart.totalPrice = this.cart.items
+    //   .reduce((prevSum, currentItem) => prevSum + currentItem.price, 0);
     /*  will start to call this method based on number of items that you have inside your item for example if you have two items this function will be called two times to start from the first one the previous sum is zero so we set the initial value to zero so the previous sum for the first run is zero and we have the current item of type cart item so we make zero plus the price of the first item for example if it is 20 the result of this function will be 20 and the 20 will be the previous sum for the next item inside the card so assume we are on the next run previous sum is 20 and the current item has a 
     price of 40. previous sum plus 40 will be 60 okay so 60 will return from the radius and will be the total price we need to do the same thing with the total count*/
 
-    this.cart.totalCount = this.cart.items.reduce((prevSum, currentItem) => prevSum + currentItem.quantity, 0)
+    this.cart.totalCount = this.cart.items.reduce((prevSum, currentItem) => prevSum + currentItem.quantity, 0);
 
 
     const cartJson = JSON.stringify(this.cart);
