@@ -32,7 +32,9 @@
 
                 <li>
 
-                    <a routerLink="/cart-page">Cart <span>3</span> </a>
+                    <a routerLink="/cart-page">Cart <span
+                            *ngIf="cartQuantity"> {{cartQuantity}}
+                        </span> </a>
 
                 </li>
 
