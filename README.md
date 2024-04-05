@@ -69,17 +69,30 @@
          3.Cart page
 
 7. Connect to Backend
-8. Create backend folder
-9. npm init
-10. npm install typescript
-11. Create ts config.json
-12. Create .gitignore
-13. Copy data.ts to backend/src
-14. npm install express cors
-15. Create server.ts
-    1. install @types
-    2. Add Apis
-16. npm install nodemon ts-node --save-dev
-17. Add urs.ts to frontend
-18. Add HttpClient module
-19. Update food service
+
+   1. Create backend folder
+   2. npm init
+   3. npm install typescript
+   4. Create ts config.json
+   5. Create .gitignore
+   6. Copy data.ts to backend/src
+   7. npm install express cors
+   8. Create server.ts
+      1. install @types
+      2. Add Apis
+   9. npm install nodemon ts-node --save-dev
+   10. Add urs.ts to frontend
+   11. Add HttpClient module
+   12. Update food service
+
+8. Loging page
+   1. Generate Component
+      1. Add to routes
+      2. Add ts
+      3. Add html
+         1. Import Reactive Forms Module
+      4. Add Css
+   2. Add Loging Api
+      1. Use Json
+      2. Add jsonwebToken
+      3. Test postman
