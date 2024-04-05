@@ -1,5 +1,3 @@
-
-
 ## Configuration
 
 1. Install development tool
@@ -69,3 +67,19 @@
          1.Home page
          2.Food page
          3.Cart page
+
+7. Connect to Backend
+8. Create backend folder
+9. npm init
+10. npm install typescript
+11. Create ts config.json
+12. Create .gitignore
+13. Copy data.ts to backend/src
+14. npm install express cors
+15. Create server.ts
+    1. install @types
+    2. Add Apis
+16. npm install nodemon ts-node --save-dev
+17. Add urs.ts to frontend
+18. Add HttpClient module
+19. Update food service
