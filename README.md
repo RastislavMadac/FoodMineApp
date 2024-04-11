@@ -106,4 +106,4 @@
       4. Add to header
    4. Add Local Storage method
    5. Add Logout method
-   6. Add to Header1
+   6. Add to Header
