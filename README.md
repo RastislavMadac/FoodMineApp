@@ -96,3 +96,14 @@
       1. Use Json
       2. Add jsonwebToken
       3. Test postman
+   3. Generate User Service
+      1.Generate user model
+      2.Add user Subject
+      3.Add Login Method
+      1. Add user Urls
+      2. Generate IUserLogin interface
+      3. Add ngx-toastr
+      4. Add to header
+   4. Add Local Storage method
+   5. Add Logout method
+   6. Add to Header1
