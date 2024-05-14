@@ -33,6 +33,7 @@ export class LogingPageComponent implements OnInit {
     return this.loginForm.controls
   }
 
+
   submit() {
     this.isSubmitted = true;
     if (this.loginForm.invalid) return;
@@ -42,6 +43,6 @@ export class LogingPageComponent implements OnInit {
       password: this.fc.password.value
     }).subscribe(() => {
       this.router.navigateByUrl(this.returnUrl);
-    })
+    });
   }
 }
