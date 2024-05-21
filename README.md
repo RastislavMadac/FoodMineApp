@@ -1,10 +1,13 @@
 ## Configuration
 
 1. Install development tool
+
 2. Create Angular App
+
    1. Create project folder
    2. Install @angular/cli
    3. Create App as frontend
+
 3. Add Header
 
    1. Generate Component
@@ -86,6 +89,7 @@
    12. Update food service
 
 8. Loging page
+
    1. Generate Component
       1. Add to routes
       2. Add ts
@@ -107,8 +111,12 @@
    4. Add Local Storage method
    5. Add Logout method
    6. Add to Header
+
 9. Make Components for loging page
    1.Input Container
    2.Input validation
    3.Text input
    4.Defauld Button
+
+   10.Connect Login API To MongoDB Atlas
+   1.Moving Apis into routers 2. Create MongoDB Atlas 3. Create.env file 4. install 1. mongoose 2. dotenv 3. bcryptjs 4. jsonwebtoken 5. express-assync-handler 5. Connect to MongoDB Atlas 6. Use MongoDB instead of data.js in apis
